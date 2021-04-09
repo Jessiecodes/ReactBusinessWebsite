@@ -55,6 +55,7 @@
   
   .nav-item:hover {
     border-bottom: 2px solid #f00946;
+    color: white;
   }
   
   .nav-links {
@@ -64,6 +65,9 @@
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
+  }
+  .nav-links:hover {
+    color: white;
   }
   
   .fa-bars {

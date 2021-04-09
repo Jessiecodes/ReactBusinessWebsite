@@ -1,0 +1,19 @@
+.Contact__Section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem;
+  height: 80vh;
+  background-image: url('https://cdn.pixabay.com/photo/2018/05/13/12/53/network-3396348_960_720.jpg');
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+
+.overlay{
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  height: 100vh;
+  width:100vw;
+  padding: 8rem 6rem;
+}

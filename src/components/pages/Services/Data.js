@@ -1,18 +1,18 @@
-export const homeObjOne = {
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
+export const serviceObjOne = {
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
     topLine: 'Exclusive Access',
     headline: 'Top of the line Security Products',
     description:
       'Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees',
     buttonLabel: 'Get Started',
     imgStart: '',
-    img: 'images/svg-5.svg',
-    alt: 'Security cameras near me'
+    img: 'images/svg-11.svg',
+    alt: 'Credit Card'
   };
   
-  export const homeObjTwo = {
+  export const serviceObjTwo = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
@@ -22,11 +22,11 @@ export const homeObjOne = {
       'We have you covered no matter where you are located. Over 140 locations worldwide to ensure you have access anytime',
     buttonLabel: 'Learn More',
     imgStart: '',
-    img: 'images/svg-9.svg',
-    alt: 'security systems installers near me'
+    img: 'images/svg-5.svg',
+    alt: 'Vault'
   };
   
-  export const homeObjThree = {
+  export const serviceObjThree = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
@@ -40,7 +40,7 @@ export const homeObjOne = {
     alt: 'Vault'
   };
   
-  export const homeObjFour = {
+  export const serviceObjFour = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
@@ -52,18 +52,4 @@ export const homeObjOne = {
     imgStart: 'start',
     img: 'images/svg-8.svg',
     alt: 'Vault'
-  };
-  
-  export const homeObjFive = {
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
-    topLine: 'More Savings, More Service',
-    headline: 'Every transaction is stored on our secure cloud database',
-    description:
-      'Never ever have to worry again about saved reciepts. We store your data, so you can access it anytime.',
-    buttonLabel: 'Sign Up Now',
-    imgStart: 'start',
-    img: 'images/svg-10.svg',
-    alt: 'security specialists located in South Florida.'
   };

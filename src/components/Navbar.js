@@ -48,8 +48,18 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/products" className="nav-links">
-                           Products
+                        <Link to="/apply" className="nav-links">
+                           Apply
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/gallery" className="nav-links">
+                           Gallery
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/contact" className="nav-links">
+                           Contact
                         </Link>
                     </li>
                     <li className="nav-btn">
@@ -70,7 +80,7 @@ function Navbar() {
                             </Link>
                         )}
                     </li>
-
+              
                  </ul>
               </div>
             </div>
