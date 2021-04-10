@@ -47,7 +47,9 @@ function Footer() {
             <h2>Contact Us</h2>
             <Link to='/'>Contact</Link>
             <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
+            <Link to="/gallery" className="nav-links">
+               Gallery
+              </Link>
             <Link to='/'>Sponsorships</Link>
           </div>
         </div>
@@ -73,10 +75,10 @@ function Footer() {
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
               <MdFingerprint className='navbar-icon' />
-              LAVISH
+              SECURITY
             </Link>
           </div>
-          <small className='website-rights'>LAVISH © 2020</small>
+          <small className='website-rights'>SECURITY © 2020</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link'

@@ -4,3 +4,10 @@
   padding: 0;
   font-family: 'PT Sans', sans-serif;
 }
+*:hover {
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: none;
+}

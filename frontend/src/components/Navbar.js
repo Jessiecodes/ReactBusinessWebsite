@@ -48,9 +48,19 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/products" className="nav-links">
-                           Products
+                        <Link to="/apply" className="nav-links">
+                           Apply
                         </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/contact" className="nav-links">
+                           Contact
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                       <a target="_blank" href="https://api.authorize.net/xml/v1/request.api" className="nav-links">
+                          Pay My Invoice
+                     </a>
                     </li>
                     <li className="nav-btn">
                         {button ? (
@@ -70,7 +80,7 @@ function Navbar() {
                             </Link>
                         )}
                     </li>
-
+              
                  </ul>
               </div>
             </div>

@@ -1,18 +1,18 @@
-export const homeObjOne = {
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
+export const serviceObjOne = {
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
     topLine: 'Exclusive Access',
     headline: 'Top of the line Security Products',
     description:
       'Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees',
     buttonLabel: 'Get Started',
     imgStart: '',
-    img: 'images/svg-1.svg',
+    img: 'images/svg-11.svg',
     alt: 'Credit Card'
   };
   
-  export const homeObjTwo = {
+  export const serviceObjTwo = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
@@ -26,7 +26,7 @@ export const homeObjOne = {
     alt: 'Vault'
   };
   
-  export const homeObjThree = {
+  export const serviceObjThree = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
@@ -40,7 +40,7 @@ export const homeObjOne = {
     alt: 'Vault'
   };
   
-  export const homeObjFour = {
+  export const serviceObjFour = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,

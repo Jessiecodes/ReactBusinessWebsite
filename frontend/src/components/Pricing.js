@@ -1,8 +1,9 @@
 import React from 'react';
 import { Button } from './Button';
 import './Pricing.css';
-import { FaFire } from 'react-icons/fa';
+import { FaFire, FaRProject } from 'react-icons/fa';
 import { BsXDiamondFill } from 'react-icons/bs';
+
 import { GiCrystalize } from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
 import { Link } from 'react-router-dom';

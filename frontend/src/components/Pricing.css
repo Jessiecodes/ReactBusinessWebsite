@@ -17,7 +17,7 @@
   
   .pricing__container-card:nth-child(2) {
     transform: scale(1.05);
-    background: #242424;
+    background: #050202;
   }
   
   .pricing__container-card:hover {
@@ -112,11 +112,12 @@
   
     .pricing__container-card:nth-child(2) {
       transform: scale(1);
-      background: #242424;
+      background: goldenrod;
       margin: 24px;
     }
   
     .pricing__container-card:hover {
       transform: none;
+      text-decoration: none;
     }
   }
