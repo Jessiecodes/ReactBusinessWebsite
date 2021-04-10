@@ -53,14 +53,14 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/gallery" className="nav-links">
-                           Gallery
-                        </Link>
-                    </li>
-                    <li className="nav-item">
                         <Link to="/contact" className="nav-links">
                            Contact
                         </Link>
+                    </li>
+                    <li className="nav-item">
+                       <a target="_blank" href="https://api.authorize.net/xml/v1/request.api" className="nav-links">
+                          Pay My Invoice
+                     </a>
                     </li>
                     <li className="nav-btn">
                         {button ? (
