@@ -1,0 +1,11 @@
+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
+
+API KEY: 
+SouthernSecurity- 
+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
+
+
+echo "export SENDGRID_API_KEY='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'" > sendgrid.env
+echo "sendgrid.env" >> .gitignore
+source ./sendgrid.env
+

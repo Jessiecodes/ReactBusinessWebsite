@@ -13,30 +13,30 @@ export const serviceObjOne = {
   };
   
   export const serviceObjTwo = {
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: '100% SECURE',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Security Surveillance',
     headline: 'Stay protected 24/7 anywhere anytime',
     description:
-      'We have you covered no matter where you are located. Over 140 locations worldwide to ensure you have access anytime',
+      'The Honeywell LYNX Touch Panels are some of the most popular alarm systems offered from Honeywell. These are wireless all-in-one systems that each feature their own touchscreen controller. They are capable of performing almost any application needed from a modern system.',
     buttonLabel: 'Learn More',
-    imgStart: '',
-    img: 'images/svg-5.svg',
-    alt: 'Vault'
+    imgStart: 'start',
+    img: 'images/lynx5000.jpg',
+    alt: 'security cameras in miami florida'
   };
   
   export const serviceObjThree = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'EASY SETUP',
-    headline: 'Super fast and simple onboarding process',
+    topLine: 'High Quality Security Systems',
+    headline: 'Industry Leading 4K ',
     description:
-      "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
+      " With industry-leading 4K resolution, smart deterence and motion detection, security camera systems from Lorex will bring a whole new level of detail to your security monitoring. ",
     buttonLabel: 'Start Now',
-    imgStart: 'start',
-    img: 'images/svg-7.svg',
+    imgStart: '',
+    img: 'images/4k.png',
     alt: 'Vault'
   };
   
@@ -44,12 +44,40 @@ export const serviceObjOne = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'DATA ANALYTICS',
-    headline: 'Every transaction is stored on our secure cloud database',
+    topLine: 'More Service, More Security ',
+    headline: 'Listen-in Audio and Two-Way Talk',
     description:
-      'Never ever have to worry again about saved reciepts. We store your data, so you can access it anytime.',
+      'Get your security system right away, enjoy no monthly contracts and financing options are available. If you are looking to protect your home, small business or commercial property, Southern Security Specialists has you covered. ',
     buttonLabel: 'Sign Up Now',
     imgStart: 'start',
-    img: 'images/svg-8.svg',
+    img: 'images/bullet.png',
+    alt: 'Vault'
+  };
+
+  export const serviceObjRing = {
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Security in a Flash',
+    headline: 'Dual LED Floodlights',
+    description:'You can activate the floodlights manually or on a schedule through the Lorex Home app. Includes Real-Time 1080 p HD Video to capture important details, Infrared Night Vision allows the camer to see up to 50ft in the dark, Fully Weather resistant .',
+    buttonLabel: 'Get a Ring',
+    imgStart: '',
+    img: 'images/Lorex_Floodlight.png',
+    alt: 'Vault'
+  };
+
+
+  export const serviceObjFive = {
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'More Service, More Security ',
+    headline: 'Remote Viewing',
+    description:
+      'Enjoy security even more, with no monthly contracts and financing available. Watch your properties while your away with the FREE app included with your installation.',
+    buttonLabel: 'Sign Up Now',
+    imgStart: 'start',
+    img: 'images/LorexHomeApp.png',
     alt: 'Vault'
   };

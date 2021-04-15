@@ -56,20 +56,29 @@
   .darkBg {
     background-color: #1c2237;
   }
+  .darkBlueBg {
+    background-color: #0429ad;
+  }
+  .darkTopLine {
+    color: darkblue;
+  }
   
   .home__hero-subtitle {
     max-width: 440px;
     margin-bottom: 35px;
     font-size: 18px;
-    line-height: 24px;
-  }
+    line-height: 49px;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+
   
   .home__hero-img-wrapper {
     max-width: 555px;
   }
   
   .home__hero-img {
-    max-width: 95%;
+    max-width: 90%;
     margin-top: 0;
     margin-right: 0;
     margin-left: 10px;
@@ -81,6 +90,13 @@
     max-width: 100%;
     vertical-align: middle;
     display: inline-block;
+  }
+
+  .flexPoints {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: blue;
   }
   
   @media screen and (max-width: 991px) {

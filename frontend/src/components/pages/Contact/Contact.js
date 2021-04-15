@@ -1,104 +1,87 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Form, Row, Col, Button } from 'react-bootstrap';
 import axios from 'axios';
-import './Contact.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-class Contact extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-          name: '',
-          email: '',
-          subject:'',
-          message: ''
-        }
-    }
+import './ContactUs.css';
 
-  onNameChange(event) {
-      this.setState({name: event.target.value})
+class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  onEmailChange(event) {
-      this.setState({email: event.target.value})
-  }
-
-  onSubjectChange(event) {
-      this.setState({subject: event.target.value})
-  }
-
-  onMsgChange(event) {
-      this.setState({message: event.target.value})
-  }
-
-  submitEmail(e){
+  handleSubmit(e) {
+    alert('The value is: ' + this.input.value);
     e.preventDefault();
-    axios({
-      method: "POST", 
-      url:"/send", 
-      data:  this.state
-    }).then((response)=>{
-      if (response.data.status === 'success'){
-          alert("Message Sent."); 
-          this.resetForm()
-      }else if(response.data.status === 'fail'){
-          alert("Message failed to send.")
-      }
-    })
-}
-
-resetForm(){
-    this.setState({name: '', email: '',subject:'', message: ''})
-}
-
-
-    render() {
-      return (
-          <div className="Contact__Section">
-              <div className="container overlay" >
-                  <div className="row">
-                      <div className="col-md-12">
-                          <div className="section-title">
-                              <h2 className="title">Contact Us</h2>
-                              <p>Let us know what you think! In order to provide better service,
-                                   please do not hesitate to give us your feedback. Thank you.</p><hr/>
-                              <form id="contact-form" onSubmit={this.submitEmail.bind(this)} 
-                                  method="POST">
-                              <div className="form-group">
-                              <div className="row">
-                              <div className="col-md-12">
-                                  <input placeholder = "Name"  id="name" type="text" 
-                                     className="form-control" required value={this.state.name} 
-                                     onChange={this.onNameChange.bind(this)}/>
-
-                                  <input placeholder = "Email"  id="email" type="email"
-                                    className="form-control" aria-describedby="emailHelp"
-                                    required value={this.state.email} onChange=
-                                    {this.onEmailChange.bind(this)}/>
-                              </div>
-                              </div>
-                              </div>
-                              <div className="form-group">
-                                  <input placeholder = "Subject"  id="subject" type="text"
-                                    className="form-control" required value={this.state.subject}
-                                    onChange={this.onSubjectChange.bind(this)}/>
-                              </div>
-                              <div className="form-group">
-                                  <textarea placeholder = "Message"  id="message" 
-                                     className="form-control" rows="1" 
-                                     required value={this.state.message}
-                                     onChange= {this.onMsgChange.bind(this)}/>
-                              </div>
-                              <button type="submit" className="primary-btn submit">Submit</button>
-                              </form>
-                          </div>
-                      </div>
-
-                  </div>
-
-              </div>
-          </div>
-      );
   }
 
+  render() {
+    return (
+      <Form className="ContactForm">
+        <Form.Row>
+          <Form.Group as={Col} controlId="formGridEmail">
+            <Form.Label>Email</Form.Label>
+            <Form.Control type="email" placeholder="Enter email" />
+          </Form.Group>
+
+          <Form.Group as={Col} controlId="formGridPassword">
+            <Form.Label>Password</Form.Label>
+            <Form.Control type="password" placeholder="Password" />
+          </Form.Group>
+        </Form.Row>
+
+        <Form.Group controlId="formGridAddress1">
+          <Form.Label>Address</Form.Label>
+          <Form.Control placeholder="1234 Main St" />
+        </Form.Group>
+
+        <Form.Row>
+          <Form.Group as={Col} controlId="formGridCity">
+            <Form.Label>City</Form.Label>
+            <Form.Control />
+          </Form.Group>
+
+          <Form.Group as={Col} controlId="formGridState">
+            <Form.Label>State</Form.Label>
+            <Form.Control as="select" defaultValue="Choose...">
+              <option>Choose...</option>
+              <option>...</option>
+            </Form.Control>
+          </Form.Group>
+
+          <Form.Group as={Col} controlId="formGridZip">
+            <Form.Label>Zip</Form.Label>
+            <Form.Control />
+          </Form.Group>
+        </Form.Row>
+
+        <Form.Group id="formGridCheckbox">
+          <Form.Check type="checkbox" label="Check me out" />
+        </Form.Group>
+        <Form.Check 
+          type="switch"
+          id="custom-switch"
+          label="Check this switch"
+        />
+        <Form.Check 
+          type="switch"
+          id="custom-swd"
+          label="Check this switch"
+        />
+        <Form.Check 
+          type="switch"
+          id="custom-sd"
+          label="Check this switch"
+        />
+
+        <Form.File id="exampleFormControlFile1" label="Example file input" />
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
+      </Form>
+    );
+  }
 }
+
 export default Contact;

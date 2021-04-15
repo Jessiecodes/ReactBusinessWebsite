@@ -1,3 +1,4 @@
+
 export const homeObjOne = {
     lightBg: false,
     lightText: true,
@@ -8,7 +9,7 @@ export const homeObjOne = {
       'Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees',
     buttonLabel: 'Get Started',
     imgStart: '',
-    img: 'images/svg-5.svg',
+    img: 'images/svg-11.svg',
     alt: 'Security cameras near me'
   };
   
@@ -19,10 +20,10 @@ export const homeObjOne = {
     topLine: '100% SECURE',
     headline: 'Stay protected 24/7 anywhere anytime',
     description:
-      'We have you covered no matter where you are located. Over 140 locations worldwide to ensure you have access anytime',
+      'We have you covered no matter where you are located. Over 140 locations worldwide to ensure you have access anytime. Call us today for a FREE quote 786-287-3326',
     buttonLabel: 'Learn More',
     imgStart: '',
-    img: 'images/svg-9.svg',
+    img: 'images/12.png',
     alt: 'security systems installers near me'
   };
   
@@ -44,10 +45,10 @@ export const homeObjOne = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'DATA ANALYTICS',
-    headline: 'Every transaction is stored on our secure cloud database',
+    topLine: 'Non Propriatary Equiptment',
+    headline: 'No Fine Print, No Contracts',
     description:
-      'Never ever have to worry again about saved reciepts. We store your data, so you can access it anytime.',
+      'We are confident once you try us you will WANT to stay with us, but if for any reason you need to cancel your service,  we will never lock you in with contracts,  we skip the fine print and focus on the service. ',
     buttonLabel: 'Sign Up Now',
     imgStart: 'start',
     img: 'images/svg-8.svg',
@@ -55,15 +56,15 @@ export const homeObjOne = {
   };
   
   export const homeObjFive = {
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
     topLine: 'More Savings, More Service',
-    headline: 'Every transaction is stored on our secure cloud database',
+    headline: 'No Monthly Fees',
     description:
-      'Never ever have to worry again about saved reciepts. We store your data, so you can access it anytime.',
+      'Never ever have to worry again about saved reciepts. There is a one time, very reasonable installation payment , and the system is yours for life!',
     buttonLabel: 'Sign Up Now',
-    imgStart: 'start',
-    img: 'images/svg-10.svg',
+    imgStart: '',
+    img: 'images/svg-4.svg',
     alt: 'security specialists located in South Florida.'
   };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -8,10 +8,12 @@ import Apply from './components/pages/Apply/Apply';
 import Contact from './components/pages/Contact/Contact';
 import Imagery from './components/Imagery/Images';
 import Footer from './components/Footer/Footer';
+import axios from 'axios';
 
 
 
 function App() {
+  
   return (
     <Router>
       <Navbar />
