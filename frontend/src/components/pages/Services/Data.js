@@ -3,12 +3,12 @@ export const serviceObjOne = {
     lightText: false,
     lightTextDesc: false,
     topLine: 'Exclusive Access',
-    headline: 'Top of the line Security Products',
+    headline: 'We pride ourselves on Superior customer service',
     description:
-      'Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees',
+      'SERVZING is your one-call solution for a wide range of home maintenance and repair needs. Our techs are fully insured and experienced. ',
     buttonLabel: 'Get Started',
     imgStart: '',
-    img: 'images/svg-11.svg',
+    img: 'images/nightwision.png',
     alt: 'Credit Card'
   };
   
@@ -17,7 +17,7 @@ export const serviceObjOne = {
     lightText: false,
     lightTextDesc: false,
     topLine: 'Security Surveillance',
-    headline: 'Stay protected 24/7 anywhere anytime',
+    headline: 'Alarm Systems ',
     description:
       'The Honeywell LYNX Touch Panels are some of the most popular alarm systems offered from Honeywell. These are wireless all-in-one systems that each feature their own touchscreen controller. They are capable of performing almost any application needed from a modern system.',
     buttonLabel: 'Learn More',
@@ -31,41 +31,55 @@ export const serviceObjOne = {
     lightText: false,
     lightTextDesc: false,
     topLine: 'High Quality Security Systems',
-    headline: 'Industry Leading 4K ',
+    headline: 'Security Surveillance',
     description:
-      " With industry-leading 4K resolution, smart deterence and motion detection, security camera systems from Lorex will bring a whole new level of detail to your security monitoring. ",
+      "Protect what matters most with this industry-leading 4K IP security camera system. Featuring a 16-channel NVR (NVR) and eight 4K Varifocal Nocturnal security cameras, this system is perfect for any home or business.  ",
     buttonLabel: 'Start Now',
-    imgStart: '',
-    img: 'images/4k.png',
+    imgStart: 'true',
+    img: 'images/16chann_8cam.png',
     alt: 'Vault'
   };
   
   export const serviceObjFour = {
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'More Service, More Security ',
-    headline: 'Listen-in Audio and Two-Way Talk',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Great Prices for a Great Service',
+    headline: 'HandyMan Services',
     description:
-      'Get your security system right away, enjoy no monthly contracts and financing options are available. If you are looking to protect your home, small business or commercial property, Southern Security Specialists has you covered. ',
-    buttonLabel: 'Sign Up Now',
+      'Regardless of the size of your home, maintaining it can be a struggle. While you may not have the time or the tools to accomplish everything you want to, what you do have is a local SERVZING with a reliable team of experts who offer handyman services.',
+    buttonLabel: '',
     imgStart: 'start',
-    img: 'images/bullet.png',
+    img: 'images/handyman.jpg',
     alt: 'Vault'
   };
 
   export const serviceObjRing = {
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'Security in a Flash',
-    headline: 'Dual LED Floodlights',
-    description:'You can activate the floodlights manually or on a schedule through the Lorex Home app. Includes Real-Time 1080 p HD Video to capture important details, Infrared Night Vision allows the camer to see up to 50ft in the dark, Fully Weather resistant .',
-    buttonLabel: 'Get a Ring',
-    imgStart: '',
-    img: 'images/Lorex_Floodlight.png',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Keeping things neat and tidy',
+    headline: 'Home Improvement',
+    description:' By power washing your deck, siding, driveway, and other exterior areas around your home, you can quickly and effectively remove built-up dirt, sediment, and other debris. This not only helps the areas look beautiful, but it can also reduce wear and tear by getting rid of mold, algae, chalk, insects, weeds, and more. Such build-up will, over time, break down and cause damage to wood / masonry and degrade paint / stains. ',
+    buttonLabel: '',
+    imgStart: 'false',
+    img: 'images/suburb.svg',
     alt: 'Vault'
   };
+
+  export const serviceObjWeb = {
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Market your Brand',
+    headline: 'Digital Services',
+    description:'Web design, High Fidelity Prototyping, UI/ UX Design, Graphic, brand & Logo design, video and photo editing. ',
+    buttonLabel: '',
+    imgStart: 'start',
+    img: 'images/svg-16.svg',
+    alt: 'Vault'
+  };
+
 
 
   export const serviceObjFive = {

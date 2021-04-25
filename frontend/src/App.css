@@ -15,5 +15,13 @@ input[type="submit"] {
   background-color: transparent;
   padding: 10px;
   border: 1px solid crimson;
-  color: white;
+  color: #fff;
+}
+.row {
+  padding: 1rem;
+}
+textarea {
+  display: flex;
+  margin: 10px auto;
+  margin-bottom: 20px;
 }

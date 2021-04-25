@@ -1,49 +1,87 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Form, Row, Col, Button } from 'react-bootstrap';
+import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './Apply.css';
 
-class Apply extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {value: ''};
-  
-      this.handleChange = this.handleChange.bind(this);
-      this.handleSubmit = this.handleSubmit.bind(this);
-    }
-  
-    handleChange(event) {
-      this.setState({value: event.target.value});
-    }
-  
-    handleSubmit(event) {
-      alert('A name was submitted: ' + this.state.value);
-      event.preventDefault();
-    }
-  
-    render() {
-      return (
-        <form className="Application" onSubmit={this.handleSubmit}>
-            <h1 className="Application_Title"> We're Hiring! </h1>
-          <label>
-            Name:
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
-          </label>
-          <label>
-          Essay:
-          <textarea value={this.state.value} onChange={this.handleChange} />
-        </label>
-        <select>
-        <option value="grapefruit">Grapefruit</option>
-        <option value="lime">Lime</option>
-        <option selected value="coconut">Coconut</option>
-        <option value="mango">Mango</option>
-        </select>
-
-        <input type="file" />
-
-          <input type="submit" value="Submit" />
-        </form>
-      );
-    }
+class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-export default Apply;
+  handleSubmit(e) {
+    alert('The value is: ' + this.input.value);
+    e.preventDefault();
+  }
+
+  render() {
+    return (
+      <Form className="ContactForm">
+        <Form.Row>
+        <Form.Group as={Col} controlId="formGridPassword">
+            <Form.Label>Name</Form.Label>
+            <Form.Control type="text" placeholder="Password" />
+          </Form.Group>
+          
+          <Form.Group as={Col} controlId="formGridEmail">
+            <Form.Label>Email</Form.Label>
+            <Form.Control type="email" placeholder="Enter email" />
+          </Form.Group>
+    
+        </Form.Row>
+        <Form.Group controlId="formGridAddress1">
+          <Form.Label></Form.Label>
+          <Form.Control placeholder="1234 Main St" />
+        </Form.Group>
+
+        <Form.Row>
+          <Form.Group as={Col} controlId="formGridCity">
+            <Form.Label>City</Form.Label>
+            <Form.Control />
+          </Form.Group>
+
+          <Form.Group as={Col} controlId="formGridState">
+            <Form.Label>State</Form.Label>
+            <Form.Control as="select" defaultValue="Choose...">
+              <option>Choose...</option>
+              <option>...</option>
+            </Form.Control>
+          </Form.Group>
+
+          <Form.Group as={Col} controlId="formGridZip">
+            <Form.Label>Zip</Form.Label>
+            <Form.Control />
+          </Form.Group>
+        </Form.Row>
+
+        <Form.Group id="formGridCheckbox">
+          <Form.Check type="checkbox" label="Check me out" />
+        </Form.Group>
+        <Form.Check 
+          type="switch"
+          id="custom-switch"
+          label="Check this switch"
+        />
+        <Form.Check 
+          type="switch"
+          id="custom-swd"
+          label="Check this switch"
+        />
+        <Form.Check 
+          type="switch"
+          id="custom-sd"
+          label="Check this switch"
+        />
+
+        <Form.File id="exampleFormControlFile1" label="Example file input" />
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
+      </Form>
+    );
+  }
+}
+
+export default Contact;

@@ -1,87 +1,71 @@
-import React, { Component } from 'react';
-import { Form, Row, Col, Button } from 'react-bootstrap';
-import axios from 'axios';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import React, { useState, useEffect } from "react";
 import './ContactUs.css';
+import { db } from "../../../firebase";
 
-class Contact extends Component {
-  constructor(props) {
-    super(props);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
+const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  handleSubmit(e) {
-    alert('The value is: ' + this.input.value);
+  const [loader, setLoader] = useState(true);
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-  }
+    setLoader(true);
 
-  render() {
-    return (
-      <Form className="ContactForm">
-        <Form.Row>
-          <Form.Group as={Col} controlId="formGridEmail">
-            <Form.Label>Email</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-          </Form.Group>
+    db.collection("contacts")
+      .add({
+        name: name,
+        email: email,
+        message: message,
+      })
+      .then(() => {
+        setLoader(false);
+        alert("Your message has been submitted👍");
+      })
+      .catch((error) => {
+        alert(error.message);
+        setLoader(false);
+      });
 
-          <Form.Group as={Col} controlId="formGridPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
-          </Form.Group>
-        </Form.Row>
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
 
-        <Form.Group controlId="formGridAddress1">
-          <Form.Label>Address</Form.Label>
-          <Form.Control placeholder="1234 Main St" />
-        </Form.Group>
+  return (
+    <form className="form" onSubmit={handleSubmit}>
+      <h1> Contact Us </h1>
 
-        <Form.Row>
-          <Form.Group as={Col} controlId="formGridCity">
-            <Form.Label>City</Form.Label>
-            <Form.Control />
-          </Form.Group>
+      <label>Name</label>
+      <input
+        placeholder="Name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
 
-          <Form.Group as={Col} controlId="formGridState">
-            <Form.Label>State</Form.Label>
-            <Form.Control as="select" defaultValue="Choose...">
-              <option>Choose...</option>
-              <option>...</option>
-            </Form.Control>
-          </Form.Group>
+      <label>Email</label>
+      <input
+        placeholder="Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
 
-          <Form.Group as={Col} controlId="formGridZip">
-            <Form.Label>Zip</Form.Label>
-            <Form.Control />
-          </Form.Group>
-        </Form.Row>
+      <label>Message</label>
+      <textarea
+        placeholder="Message"
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+      ></textarea>
 
-        <Form.Group id="formGridCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
-        <Form.Check 
-          type="switch"
-          id="custom-switch"
-          label="Check this switch"
-        />
-        <Form.Check 
-          type="switch"
-          id="custom-swd"
-          label="Check this switch"
-        />
-        <Form.Check 
-          type="switch"
-          id="custom-sd"
-          label="Check this switch"
-        />
-
-        <Form.File id="exampleFormControlFile1" label="Example file input" />
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </Form>
-    );
-  }
-}
+      <button
+        type="submit"
+        style={{ background: loader ? "rgb(24, 204, 204);" : "rgb(24, 204, 204);" }}
+      >
+        Submit
+      </button>
+    </form>
+  );
+};
 
 export default Contact;

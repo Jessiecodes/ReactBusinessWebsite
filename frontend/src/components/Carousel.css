@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+}
+
+.carousel_wrapper {
+    width: 90%;
+    display: flex;
+    padding: 3rem;
+    margin: 0 auto;
+    height: 60vh;
+}
+.Card_Header {
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg,  rgb(0, 192, 226) 0%, rgb(6, 158, 185) 0%, rgba(6,158,255,1) 100%);
+    background: -webkit-linear-gradient(90deg,  rgb(0, 192, 226) 0%, rgb(6, 158, 226) 0%, rgba(6,158,255,1) 100%);
+    background: linear-gradient(90deg,  rgb(0, 192, 226) 0%, rgb(0, 192, 226) 0%, rgba(0,212,255,1) 100%);
+}
+.Jumbotron {
+    background-color: #fff;
+}
+.jumbo_img {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.carousel_title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-top: 0px;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.blockquote.mb-0 {
+    padding: 1.4rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.stars_group {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: gold;
+    font-size: 2rem;
+}
+.Google_Review_Link {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: -20px;
+}
+.people_icon {
+    font-size: 3rem;
+    margin-right: 20px;
+}
