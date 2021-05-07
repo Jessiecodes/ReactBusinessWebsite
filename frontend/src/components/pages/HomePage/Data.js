@@ -1,14 +1,13 @@
+
 export const homeObjOne = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Exclusive Access',
-    headline: 'Top of the line Security Products',
-    description:
-      'Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees',
+    topLine: 'Non Proprietary Equiptment ',
+    headline: '5 Star Customer Service',
     buttonLabel: 'Get Started',
     imgStart: '',
-    img: 'images/svg-5.svg',
+    img: 'images/svg-11.svg',
     alt: 'Security cameras near me'
   };
   
@@ -17,12 +16,12 @@ export const homeObjOne = {
     lightText: true,
     lightTextDesc: true,
     topLine: '100% SECURE',
-    headline: 'Stay protected 24/7 anywhere anytime',
+    headline: 'Stay protected 24/7',
     description:
-      'We have you covered no matter where you are located. Over 140 locations worldwide to ensure you have access anytime',
+      'We have you covered no matter where you are located. Over 140 locations worldwide to ensure you have access anytime. Call us today for a FREE quote 786-287-3326',
     buttonLabel: 'Learn More',
     imgStart: '',
-    img: 'images/svg-9.svg',
+    img: 'images/bullet.png',
     alt: 'security systems installers near me'
   };
   
@@ -30,10 +29,10 @@ export const homeObjOne = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'EASY SETUP',
-    headline: 'Super fast and simple onboarding process',
+    topLine: 'Cameras',
+    headline: 'Simple set up, no monthly fees',
     description:
-      "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
+      "There are absolutely no monthly fees associated with this security system. All video footage is safely stored on the security grade hard drive located within the recorder.",
     buttonLabel: 'Start Now',
     imgStart: 'start',
     img: 'images/svg-7.svg',
@@ -41,16 +40,16 @@ export const homeObjOne = {
   };
   
   export const homeObjFour = {
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'DATA ANALYTICS',
-    headline: 'Every transaction is stored on our secure cloud database',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Alarms',
+    headline: 'No Fine Print, No Contracts ',
     description:
-      'Never ever have to worry again about saved reciepts. We store your data, so you can access it anytime.',
+      'We are confident once you try us you will WANT to stay with us, but if for any reason you need to cancel your service,  we will never lock you in with contracts,  we skip the fine print and focus on the service. ',
     buttonLabel: 'Sign Up Now',
-    imgStart: 'start',
-    img: 'images/svg-8.svg',
+    imgStart: '',
+    img: 'images/nocontracts.png',
     alt: 'Vault'
   };
   
@@ -58,12 +57,12 @@ export const homeObjOne = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'More Savings, More Service',
-    headline: 'Every transaction is stored on our secure cloud database',
+    topLine: 'Refer a friend, get the perks!',
+    headline: 'Referral Program',
     description:
-      'Never ever have to worry again about saved reciepts. We store your data, so you can access it anytime.',
+      'We actively reward our loyal customers for sending us more business. Either earn a FREE month of alarm monitoring service or a Visa GiftCard valued at $25.',
     buttonLabel: 'Sign Up Now',
     imgStart: 'start',
-    img: 'images/svg-10.svg',
+    img: 'images/svg-5.svg',
     alt: 'security specialists located in South Florida.'
   };

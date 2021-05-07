@@ -1,15 +1,23 @@
 import React from 'react';
 import HeroSection from '../../HeroSection';
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive } from './Data';
-import Pricing from '../../Pricing';
+import InfoSection from '../../InfoSection';
+import { homeObjThree, homeObjFour } from './Data';
+import CarouselTestimonials from './../../Carousel';
+import Fade from 'react-reveal/Fade';
+
 
 function Home() {
   return (
     <>
-      <HeroSection {...homeObjTwo} />
-      <HeroSection {...homeObjFive} />
-      <Pricing />
+     <Fade>
+        <InfoSection /> 
+      </Fade>
+      
+      <CarouselTestimonials />
+      <Fade>
+      <HeroSection {...homeObjThree} />
       <HeroSection {...homeObjFour} />
+      </Fade>
     </>
   );
 }

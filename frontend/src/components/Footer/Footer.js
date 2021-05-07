@@ -14,25 +14,7 @@ import { MdFingerprint } from 'react-icons/md';
 function Footer() {
   return (
     <div className='footer-container'>
-      <section className='footer-subscription'>
-        <p className='footer-subscription-heading'>
-          Join our exclusive membership to receive the latest news and trends
-        </p>
-        <p className='footer-subscription-text'>
-          You can unsubscribe at any time.
-        </p>
-        <div className='input-areas'>
-          <form>
-            <input
-              className='footer-input'
-              name='email'
-              type='email'
-              placeholder='Your Email'
-            />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
-          </form>
-        </div>
-      </section>
+     
       <div className='footer-links'>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
@@ -47,9 +29,7 @@ function Footer() {
             <h2>Contact Us</h2>
             <Link to='/'>Contact</Link>
             <Link to='/'>Support</Link>
-            <Link to="/gallery" className="nav-links">
-               Gallery
-              </Link>
+            <Link to="/">Gallery </Link>
             <Link to='/'>Sponsorships</Link>
           </div>
         </div>
@@ -62,11 +42,11 @@ function Footer() {
             <Link to='/'>Influencer</Link>
           </div>
           <div className='footer-link-items'>
-            <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
+            <h2> Social Media </h2>
+              <a href="https://www.instagram.com/servzing/" target="_blank"> Instagram</a>
+              <a href="https://www.facebook.com/lifefordean" target="_blank">Facebook</a>
+              <a href="https://www.linkedin.com/in/dean-martin-9a401338/" target="_blank">LinkedIn</a>
+              <a href="https://twitter.com/SouthernSecuri3" target="_blank">Twitter</a>
           </div>
         </div>
       </div>
@@ -75,53 +55,23 @@ function Footer() {
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
               <MdFingerprint className='navbar-icon' />
-              SECURITY
+              SERVZING
             </Link>
           </div>
-          <small className='website-rights'>SECURITY © 2020</small>
+          <small className='website-rights'>SERVZING © 2020</small>
           <div className='social-icons'>
-            <Link
-              className='social-icon-link'
-              to='/'
-              target='_blank'
-              aria-label='Facebook'
-            >
+          <a href="https://www.facebook.com/lifefordean" target="_blank">
               <FaFacebook />
-            </Link>
-            <Link
-              className='social-icon-link'
-              to='/'
-              target='_blank'
-              aria-label='Instagram'
-            >
+           </a>
+           <a href="https://www.instagram.com/servzing/" target="_blank"> 
               <FaInstagram />
-            </Link>
-            <Link
-              className='social-icon-link'
-              to={
-                '//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber'
-              }
-              target='_blank'
-              aria-label='Youtube'
-            >
-              <FaYoutube />
-            </Link>
-            <Link
-              className='social-icon-link'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
+           </a>
+           <a href="https://twitter.com/SouthernSecuri3" target="_blank">
               <FaTwitter />
-            </Link>
-            <Link
-              className='social-icon-link'
-              to='/'
-              target='_blank'
-              aria-label='LinkedIn'
-            >
+           </a>
+           <a href="https://www.linkedin.com/in/dean-martin-9a401338/" target="_blank">
               <FaLinkedin />
-            </Link>
+            </a>
           </div>
         </div>
       </section>

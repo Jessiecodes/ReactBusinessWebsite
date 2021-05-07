@@ -1,104 +1,71 @@
-import React, { Component } from 'react'
-import axios from 'axios';
-import './Contact.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState, useEffect } from "react";
+import './ContactUs.css';
+import { db } from "../../../firebase";
 
-class Contact extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-          name: '',
-          email: '',
-          subject:'',
-          message: ''
-        }
-    }
+function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  onNameChange(event) {
-      this.setState({name: event.target.value})
-  }
+  const [loader, setLoader] = useState(true);
 
-  onEmailChange(event) {
-      this.setState({email: event.target.value})
-  }
-
-  onSubjectChange(event) {
-      this.setState({subject: event.target.value})
-  }
-
-  onMsgChange(event) {
-      this.setState({message: event.target.value})
-  }
-
-  submitEmail(e){
+  const handleSubmit = (e) => {
     e.preventDefault();
-    axios({
-      method: "POST", 
-      url:"/send", 
-      data:  this.state
-    }).then((response)=>{
-      if (response.data.status === 'success'){
-          alert("Message Sent."); 
-          this.resetForm()
-      }else if(response.data.status === 'fail'){
-          alert("Message failed to send.")
-      }
-    })
-}
+    setLoader(true);
 
-resetForm(){
-    this.setState({name: '', email: '',subject:'', message: ''})
-}
+    db.collection("contacts")
+      .add({
+        name: name,
+        email: email,
+        message: message,
+      })
+      .then(() => {
+        setLoader(false);
+        alert("Your message has been submitted👍");
+      })
+      .catch((error) => {
+        alert(error.message);
+        setLoader(false);
+      });
 
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
 
-    render() {
-      return (
-          <div className="Contact__Section">
-              <div className="container overlay" >
-                  <div className="row">
-                      <div className="col-md-12">
-                          <div className="section-title">
-                              <h2 className="title">Contact Us</h2>
-                              <p>Let us know what you think! In order to provide better service,
-                                   please do not hesitate to give us your feedback. Thank you.</p><hr/>
-                              <form id="contact-form" onSubmit={this.submitEmail.bind(this)} 
-                                  method="POST">
-                              <div className="form-group">
-                              <div className="row">
-                              <div className="col-md-12">
-                                  <input placeholder = "Name"  id="name" type="text" 
-                                     className="form-control" required value={this.state.name} 
-                                     onChange={this.onNameChange.bind(this)}/>
+  return (
+    <form className="form" onSubmit={handleSubmit}>
+      <h1> Contact Us </h1>
 
-                                  <input placeholder = "Email"  id="email" type="email"
-                                    className="form-control" aria-describedby="emailHelp"
-                                    required value={this.state.email} onChange=
-                                    {this.onEmailChange.bind(this)}/>
-                              </div>
-                              </div>
-                              </div>
-                              <div className="form-group">
-                                  <input placeholder = "Subject"  id="subject" type="text"
-                                    className="form-control" required value={this.state.subject}
-                                    onChange={this.onSubjectChange.bind(this)}/>
-                              </div>
-                              <div className="form-group">
-                                  <textarea placeholder = "Message"  id="message" 
-                                     className="form-control" rows="1" 
-                                     required value={this.state.message}
-                                     onChange= {this.onMsgChange.bind(this)}/>
-                              </div>
-                              <button type="submit" className="primary-btn submit">Submit</button>
-                              </form>
-                          </div>
-                      </div>
+      <label>Name</label>
+      <input
+        placeholder="Name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
 
-                  </div>
+      <label>Email</label>
+      <input
+        placeholder="Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
 
-              </div>
-          </div>
-      );
-  }
+      <label>Message</label>
+      <textarea
+        placeholder="Message"
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+      ></textarea>
 
-}
+      <button
+        type="submit"
+        style={{ background: loader ? "rgb(24, 204, 204);" : "rgb(24, 204, 204);" }}
+      >
+        Submit
+      </button>
+    </form>
+  );
+};
+
 export default Contact;
