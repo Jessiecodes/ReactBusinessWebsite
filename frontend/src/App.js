@@ -7,7 +7,6 @@ import Services from './components/pages/Services/Services';
 import Cameras from './components/pages/Cameras/Cameras';
 import Alarms from './components/pages/Alarms/Alarms';
 import Contact from './components/pages/Contact/Contact';
-import Imagery from './components/Imagery/Images';
 import Footer from './components/Footer/Footer';
 import axios from 'axios';
 
@@ -24,7 +23,6 @@ function App() {
         <Route path='/contact' component={Contact} />
         <Route path='/alarms' component={Alarms} />
         <Route path='/cameras' component={Cameras} />
-        <Route path='/gallery' component={Imagery} />
       </Switch>
       <Footer />
     </Router>

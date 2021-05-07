@@ -6,18 +6,18 @@ import Carousel from 'react-bootstrap/Carousel';
 import ListGroup from 'react-bootstrap/ListGroup'
 import { BsPeople, BsFillCaretRightFill  } from "react-icons/bs";
 import IMG from '../../src/images/nightwision.png';
-import HandyMan from '../../src/images/handyman.jpg'
+import Remote from '../images/svg-12.svg';
 import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/Row';
-import Desk from '../images/desk.jpg';
-import Servzing from '../images/SERVZING_BANNER.jpg';
-import Commercial from '../images/commerical.jpg';
-import Residential from '../images/residential.jpg';
+import Banner1 from '../images/banner1.jpg';
+import Servzing from '../images/bullet.png';
+import Commercial from '../images/handydude.jpg';
+import Residential from '../images/svg-11.svg';
 
 function InfoSection() {
     return (
         <div className="Home_Carousel_Wrapper">
-        <Container fluid>
+        <Container id="carousel_container">
             <Carousel className="Home_Carousel">
             <Carousel.Item interval={500} className="Carousel_item">
                     <img
@@ -35,8 +35,8 @@ function InfoSection() {
                 <Carousel.Item interval={1000} className="Carousel_item">
                     <img
                     className="d-block w-100"
-                    src={Desk}
-                    alt="First slide"
+                    src={Banner1}
+                    alt="Affordable security systems"
                     />
                     <Carousel.Caption className="CarouselCaption">
                     <h3>Business Professionals with over 30 years experience.</h3>
@@ -49,7 +49,7 @@ function InfoSection() {
                     <img
                     className="d-block w-100"
                     src={Residential}
-                    alt="Third slide"
+                    alt="affordable security systems near me"
                     />
                     <Carousel.Caption  className="CarouselCaption">
                     <h3>Residential Security</h3>
@@ -59,12 +59,12 @@ function InfoSection() {
                 <Carousel.Item className="Carousel_item">
                     <img
                     className="d-block w-100"
-                    src={HandyMan}
-                    alt="Third slide"
+                    src={Remote}
+                    alt="security systems with no contracts"
                     />
                     <Carousel.Caption  className="CarouselCaption">
-                    <h3>HandyMan Services</h3>
-                    <p>Pressure cleaning, TV Mounting, painting, electrical are some services to name a few..</p>
+                    <h3>Remote Access</h3>
+                    <p> Keep an eye on your properties no matter where you are, enjoy your vacations now with peace of mind. </p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className="Carousel_item">

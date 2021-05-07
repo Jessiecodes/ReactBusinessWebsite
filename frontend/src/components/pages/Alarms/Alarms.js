@@ -112,7 +112,7 @@ function Alarms() {
             <Container>
             <h1 className="container-title">Safety, Savings, Service</h1>
                 <Row className="row">
-                    <Col className="Col">We are a licensed, authorized security systems and Lorex dealer. Southern Security Specialists, LLC ( now doing business as <span className="SERVZING_COLOR">SERVZING</span> ) is a DBA of Security Alarm Division, LLC. <br></br> <br></br> Primarily we are located in South Florida and surrounding cities. We currently are expanding to surrounding states and are actively seeking Investors.
+                    <Col className="Col">We are a licensed, authorized security systems and Lorex dealer. Southern Security Specialists, LLC ( now doing business as <bold><i>SERV</i></bold><span className="SERVZING_COLOR">ZING</span> ) is a DBA of Security Alarm Division, LLC. <br></br> <br></br> Primarily we are located in South Florida and surrounding cities. We currently are expanding to surrounding states and are actively seeking Investors.
                      </Col>
                     <Col className="Col"> We install and monitor high-quality alarm systems for Residential and Commercial clients. We provide the protection of having an alarm system for your home, business or even your apartment. <br></br> <br></br> While many large alarm companies do not offer their services to renters, we do! <br></br> Ask us about Alarm service for LIFE! </Col>
                 </Row>

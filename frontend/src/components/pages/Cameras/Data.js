@@ -2,11 +2,11 @@ export const CameraOne = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-    topLine: 'We will keep an eye out ',
-    headline: '4K Ultra High Definition',
+    topLine: 'Complete and Secure',
+    headline: 'Lorex Home Center',
     description:
-      'Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees',
-    buttonLabel: 'Get Started',
+      'This revolutionary home monitoring solution puts the controls firmly in your hands with its simple touch screen interface. View and customize the included two Outdoor Smart Wi-Fi Security Cameras, Video Doorbell and Floodlight Camera using the Lorex Home Center or use our new "Lorex Voice™ Assistant" to conveniently access and control your cameras with just the sound of your voice. ',
+    buttonLabel: '',
     imgStart: '',
     img: 'images/home_center.png',
     alt: 'Credit Card'
@@ -19,8 +19,8 @@ export const CameraOne = {
     topLine: 'See what goes on ',
     headline: 'At your Front Door',
     description:
-      'The Honeywell LYNX Touch Panels are some of the most popular alarm systems offered from Honeywell. These are wireless all-in-one systems that each feature their own touchscreen controller. They are capable of performing almost any application needed from a modern system.',
-    buttonLabel: 'Learn More',
+      ' Featuring the Lorex Home Hub, a 2K Wi-Fi Video Doorbell and three 2K resolution wire-free cameras, this system will help you protect what matters most with no monthly fees.',
+    buttonLabel: '',
     imgStart: 'start',
     img: 'images/WireFree.png',
     alt: 'security cameras in miami florida'
@@ -34,7 +34,7 @@ export const CameraOne = {
     headline: 'Build to Withstand Weather Conditions ',
     description:
       " With industry-leading 4K resolution, smart deterence and motion detection, security camera systems from Lorex will bring a whole new level of detail to your security monitoring. ",
-    buttonLabel: 'Start Now',
+    buttonLabel: '',
     imgStart: '',
     img: 'images/weatherproof.png',
     alt: 'Vault'
@@ -76,7 +76,7 @@ export const CameraOne = {
     headline: 'Remote Viewing',
     description:
       'Enjoy security even more, with no monthly contracts and financing available. Watch your properties while your away with the FREE app included with your installation.',
-    buttonLabel: 'Sign Up Now',
+    buttonLabel: '',
     imgStart: 'start',
     img: 'images/LorexHomeApp.png',
     alt: 'Vault'

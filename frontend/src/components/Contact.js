@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import './ContactUs.css';
 import { db } from "../../../firebase";
 
-function Contact() {
+const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -21,7 +21,7 @@ function Contact() {
       })
       .then(() => {
         setLoader(false);
-        alert("Your message has been submitted👍");
+        alert(" Your message has been submitted 👍 ");
       })
       .catch((error) => {
         alert(error.message);

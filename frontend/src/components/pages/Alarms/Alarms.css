@@ -57,14 +57,6 @@ img.card-img-top.Alarm_Card_Img {
       height: 400px;
       width: 100%;
   }
-  .card-text {
-    text-align: center;
-    color: rgb(59, 41, 44);
-    padding: 1rem;
-    font-size: 18px;
-    font-family: 'Raleway', sans-serif;  
-
-   }
 
    .Customize_Title{
     display: flex;
@@ -85,7 +77,7 @@ img.card-img-top.Alarm_Card_Img {
         padding: 6rem 6rem;
     }
    
-    p {
+    .card-text {
         text-align: center;
         font-size: 1.3rem;
         color: slategray;

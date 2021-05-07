@@ -6,7 +6,6 @@ import { Button } from './Button';
 import  './Navbar.css';
 import { IconContext } from 'react-icons/lib';
 import Logo from '../images/servzing_shield.png';
-import SSSLogo from '../images/SSS.png';
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -32,7 +31,6 @@ function Navbar() {
               <div className="navbar-container container">
                   <Link to="/" className="navbar-logo"
                         onClick={closeMobileMenu}>
-                      <img src={SSSLogo} alt="logo" width='60px' height='60px' />
                       <img src={Logo} alt="logo" width='60px' height='60px' />
                      
                   </Link>

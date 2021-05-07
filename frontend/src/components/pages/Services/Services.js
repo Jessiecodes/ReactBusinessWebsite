@@ -10,13 +10,12 @@ import Design from '../../../images/Design.jpg';
 import HandyManSm from '../../../images/handyman_small.jpg';
 import HomeImprov from '../../../images/homeimprov.jpg';
 import HeroSection from '../../HeroSection';
-import { serviceObjOne, serviceObjTwo, serviceObjThree, serviceObjFour,serviceObjRing, serviceObjWeb } from './Data';
+import { serviceObjOne } from './Data';
 import Container from 'react-bootstrap/Container';
-import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import CardDeck from 'react-bootstrap/CardDeck'
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Row from 'react-bootstrap/Row';
+import Card from 'react-bootstrap/Card';
 import Fade from 'react-reveal/Fade';
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
@@ -28,61 +27,7 @@ function Services() {
     <Fade>
       <HeroSection {...serviceObjOne} />
     </Fade>
-    <Container>
-    <Row>
-        <Col>
-        <Fade>
-        <h1 className="Services_Section_Title"> Control your whole home with smarter security </h1>
-        <div className="Services_Tabs">
-        <Tabs defaultActiveKey="home" transition={false} id="noanim-tab-example">
-          <Tab eventKey="home" title="Home Automation">
-            <p className="tab_paragraph">
-               <FaBraille />
-               <br></br>
-                Connect Alexa or Google Assistant to your security system quick and easy - we'll show you how.
-             </p>
-             <div className="home_security_voice">
-              <img src={Alexa} alt="Amazon Alexa Security" />
-              <img src={Google} alt="Google Assistant" />
-            </div>
-          </Tab>
-          <Tab eventKey="profile" title="Smart technology">
-            <p className="tab_paragraph">
-               <FaVectorSquare /> 
-               <br></br>
-               Get Full home control for devices like your lights, locks, thermostat or garage door.  
-               </p>
-          </Tab>
-          <Tab eventKey="contact" title="Remote Viewing" >
-          <p className="tab_paragraph">
-             <FaRegIdBadge /> 
-             <br></br>
-             Manage your whole system with the Free app included with installation. 
-             The whole family can easily view, connect & control from anywhere, at anytime.
-             
-             </p>
-          </Tab>
-        </Tabs> 
-        </div>
-        </Fade>
-        <Card border="danger" className="bg-dark text-white">
-          <Card.Img src={NightVision} alt="Card image" />
-          <Card.ImgOverlay>
-            <Card.Title>The Best home security systems</Card.Title>
-            <Card.Text>Security Surveillance in Davie, Florida</Card.Text>
-            <Card.Text>
-              "Hey Google, show me backyard camera"
-                <br></br>
-              "Hey Google, turn on front porch siren"
-                <br></br>
-              "Hey Google, turn off garden light"
-            </Card.Text>
-          </Card.ImgOverlay>
-        </Card>
-        </Col>
-    </Row>
-</Container>
-<Container className="Services_Wrapper">
+    <Container className="Services_Wrapper">
 <h1> We Serve with a <span className="Zing_color"> Zing </span> </h1>
       <Row>
       <CardDeck>
@@ -146,6 +91,60 @@ function Services() {
       </CardDeck>
       </Row>
     </Container>
+
+    <Container>
+    <Row>
+        <Col>
+        <Fade>
+        <h1 className="Services_Section_Title"> Control your whole home with smarter security </h1>
+        <div className="Services_Tabs">
+        <Tabs defaultActiveKey="home" transition={false} id="noanim-tab-example">
+          <Tab eventKey="home" title="Home Automation">
+            <p className="tab_paragraph">
+               <FaBraille />
+               <br></br>
+                Connect Alexa or Google Assistant to your security system quick and easy - we'll show you how.
+             </p>
+             <div className="home_security_voice">
+              <img src={Alexa} alt="Amazon Alexa Security" />
+              <img src={Google} alt="Google Assistant" />
+            </div>
+          </Tab>
+          <Tab eventKey="profile" title="Smart technology">
+            <p className="tab_paragraph">
+               <FaVectorSquare /> 
+               <br></br>
+               Get Full home control for devices like your lights, locks, thermostat or garage door.  
+               </p>
+          </Tab>
+          <Tab eventKey="contact" title="Remote Viewing" >
+          <p className="tab_paragraph">
+             <FaRegIdBadge /> 
+             <br></br>
+             Manage your whole system with the Free app included with installation. 
+             The whole family can easily view, connect & control from anywhere, at anytime.
+             
+             </p>
+          </Tab>
+        </Tabs> 
+        </div>
+        </Fade>
+        <Card border="danger" className="bg-dark text-white" id="alexa_card">
+          <Card.Img src={NightVision} alt="Card image" />
+          <Card.ImgOverlay>
+            <Card.Text>Security Surveillance in Davie, Florida</Card.Text>
+            <Card.Text>
+              "Hey Google, show me backyard camera"
+                <br></br>
+              "Hey Google, turn on front porch siren"
+                <br></br>
+              "Hey Google, turn off garden light"
+            </Card.Text>
+          </Card.ImgOverlay>
+        </Card>
+        </Col>
+    </Row>
+</Container>
     </>
   );
 }

@@ -15,7 +15,8 @@
     transition: 3s all ease;
 
  }
-.Services_Section_Title{
+.Services_Section_Title,
+.Cameras_Gallery_title {
     padding: 2rem;
     font-family: 'Raleway', sans-serif; 
 
@@ -26,7 +27,12 @@
     width: 100%;
     line-height: 35px;
     padding: 1.4rem;
+    color: gray;
 }
+.tab_paragraph:hover {
+   color: black;
+}
+
 .home_security_voice{
     padding: 2rem;
     display: flex;
@@ -54,3 +60,4 @@
     width: 90%;
     margin: 0 auto;
 }
+ 
